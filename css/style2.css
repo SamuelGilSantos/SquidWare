@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+  opacity: 0.9;
+}
+header button {
+  background-color: #D9D9D9;
+  padding: 10px;
+  border-radius: 10px;
+}
+header button:hover {
+  transition: 0.5s;
+  color: white;
+  background-color: #C32F27;
+}
+
+.produto {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-around;
+  top: -70px;
+}
+.produto .bg {
+  position: relative;
+}
+.produto .pdv {
+  position: absolute;
+  left: 0;
+  margin-left: 5%;
+}
+.produto .card {
+  position: absolute;
+  right: 0;
+  margin-right: 10%;
+  left: 100;
+  background-color: transparent;
+  color: white;
+  font-weight: 600;
+  border: 5px solid #C32F27;
+}
+.produto .card h4 {
+  text-align: left;
+}
+
+.desc {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.desc span {
+  font-weight: 600;
+  font-size: 1.2em;
+}
+.desc .card {
+  border: 10px solid #C32F27;
+  height: 55vh;
+}
+.desc .card li {
+  display: inline-block;
+  margin-bottom: 1%;
+}
+
+.parceiros {
+  margin-top: 10%;
+  background-color: #C32F27;
+}
+.parceiros h1 {
+  margin-top: 2%;
+  text-align: center;
+  color: white;
+}
+
+.center {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+.wrapper {
+  display: flex;
+  grid-gap: 1em;
+  overflow: hidden;
+  width: 55em;
+}
+.wrapper > .inner {
+  display: flex;
+  grid-gap: 1em;
+  transition: all 1s ease-in-out;
+}
+
+.card {
+  background: none;
+  justify-content: center;
+  border: none;
+}
+.card > img {
+  display: block;
+  width: 17.5em;
+}
+
+.map {
+  margin-top: 1em;
+  margin-bottom: 10%;
+}
+.map > button {
+  all: unset;
+  background: #ffffff;
+  cursor: pointer;
+  margin: 0 0.125em;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border-radius: 100%;
+  height: 1em;
+  width: 1em;
+}
+.map > button.active:after {
+  background: #88201b;
+  content: "";
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  border-radius: 100%;
+  height: 0.5em;
+  width: 0.5em;
+}
+
+footer {
+  display: flex;
+  background-color: black;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+footer h5 {
+  color: white;
+}
+footer p {
+  color: rgba(255, 255, 255, 0.644);
+}
+footer ul {
+  list-style: none;
+}
+footer ul li {
+  display: inline-block;
+}
+footer fieldset {
+  margin-top: 10px;
+}
+footer fieldset h3 {
+  color: white;
+}
+footer fieldset input, footer fieldset textarea {
+  padding: 10px;
+  outline: none;
+  width: 100%;
+  margin-bottom: 10px;
+}
+footer fieldset input[type=submit]:hover {
+  transition: 0.7s;
+  background-color: rgba(155, 155, 155, 0.616);
+}/*# sourceMappingURL=style2.css.map */
